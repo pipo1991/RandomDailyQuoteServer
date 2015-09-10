@@ -1,0 +1,11 @@
+<h1>Subscribe to daily quotes :</h1>
+
+<%= form_tag :action => "subscribe" do |f| %>
+  <div class="field">
+    <h3>email</h3>
+    <%= text_field  "user","email"  %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Subscribe" %>
+  </div>
+<% end %>

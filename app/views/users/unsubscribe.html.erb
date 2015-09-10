@@ -1,0 +1,11 @@
+<h1>UnSubscribe from daily quotes :</h1>
+
+<%= form_tag :action => "unsubscribe" do |f| %>
+  <div class="field">
+    <h3>email</h3>
+    <%= text_field  "user","email"  %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Unsubscribe" %>
+  </div>
+<% end %>

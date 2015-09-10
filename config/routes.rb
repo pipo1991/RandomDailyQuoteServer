@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
+  #resources :users
+  resources :quotes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'users#subscribe_page'
+  
+  get 'subscribe' => 'users#subscribe_page'
+  post 'subscribe_now' => 'users#subscribe'
+  get 'unsubscribe' => 'users#unsubscribe_page'
+  post 'unsubscribe_now' => 'users#unsubscribe'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
