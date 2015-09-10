@@ -21,7 +21,9 @@ whenever --update-crontab mailer
 
 # Pages to use 
 # To subscribe
+
 {host:port}/subscribe  "Which is the root page"
 
 # To unsubscribe
+
 {host:port}/unsubscribe  
