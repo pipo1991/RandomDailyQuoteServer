@@ -7,7 +7,4 @@ class MainController < ApplicationController
     end
   end
 
-  def self.lol
-    puts "lol"	
-  end
 end
